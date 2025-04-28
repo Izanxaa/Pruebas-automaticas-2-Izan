@@ -31,10 +31,13 @@ class CalculadoraTest {
 
     @org.junit.jupiter.api.Test
     void division() {
+        assertEquals(1, calculadora.division(2,2));
     }
 
     @org.junit.jupiter.api.Test
     void esPar() {
+        assertTrue(calculadora.esPar(4));
+        assertFalse(calculadora.esPar(3));
     }
 
     @org.junit.jupiter.api.Test
